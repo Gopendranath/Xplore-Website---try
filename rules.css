@@ -1,0 +1,125 @@
+/* Base Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color on top of video */
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+
+.title {
+    text-align: center;
+}
+
+.topic {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Rules Section Styles */
+
+.rules {
+    margin-top: 20px;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.rules ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.rules ol li {
+    margin-bottom: 10px;
+}
+
+.rules ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Deadline and Contact Section Styles */
+
+.deadline {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 40px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .topic {
+        font-size: 1.1rem;
+    }
+    
+    .section-heading {
+        font-size: 1rem;
+    }
+    
+    .rules ol {
+        padding-left: 10px;
+    }
+    
+    .rules ul {
+        padding-left: 10px;
+    }
+    
+    .contact p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .topic {
+        font-size: 1rem;
+    }
+    
+    .section-heading {
+        font-size: 0.9rem;
+    }
+}

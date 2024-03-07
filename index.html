@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPLORE'24</title>
+
+    <link rel="stylesheet" href="path/to/lightbox.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainNavigation">
+        <nav role="navigation">
+            <div class="logo-container">
+               
+                <img src="xlogoremove bg.png" alt="Left logo" class="rounded">
+                <div>
+                    <h1 class="typed-out">Xplore</h1>
+                </div>
+                <!-- Add another logo here -->
+                <img src="fitlogo-2.jpg" alt="Right logo" class="rounded">
+            </div>
+        </nav>
+        <div class="navbar-expand-md">
+          <div class="navbar-dark text-center my-2">
+            <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+            </button>
+          </div>
+          <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Event">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teams">Team</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <!--- <li><a class="dropdown-item" href="#sponsor">Sponsor</a></li>-->
+                  <li><a class="dropdown-item" href="#Contact">Contact us</a></li>
+                <!---  <li><a class="dropdown-item" href="#">ILLUSTRATion</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="position-relative overflow-hidden">
+        <div class="d-flex min-vh-100" lc-helper="video-bg">
+            <video style="z-index:1;object-fit: cover; object-position: 50% 50%; opacity:45%;" class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+                <!-- adjust object-position to tweak cropping on mobile -->
+                <source src="hv.mp4" type="video/mp4">
+            </video>
+            <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+                <div class="lc-block mb-4 pt-5">
+                    <div id="countdown" class="display-1 fw-bolder countdown">Let's Xplore</div>
+                </div>
+    
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p class="lead">Hold your breath and get ready to be amazed! Countdown to an extraordinary journey!</p>
+                    </div>
+                </div>
+    
+                <div class="lc-block">
+                    <svg onclick="scrollToNextSection()" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                    </svg>
+    
+                    <!-- for Safari support only, remove if you want  -->
+                    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+<!-- About Section with Multiple Images -->
+<section id="About">
+<section class="container mt-2 .bg-dark.bg-gradient">
+    <div class="row">
+        <div class="col-lg-6 text-justify">
+            <h2 class="destination pb-3">About Us</h2>
+            <p>XPLORE, led by the Department of Electronics & Communication Engineering at the Future Institute of Technology, aims to spread and improve technical skills in new Electronics advancements. It welcomes students from various fields and academic levels to get involved and take an active part.
+            </p>
+            <p>
+                Participants are encouraged to be creative and do things differently. Plus, having alumni and teachers as guides adds real-life experience. In the end, Xplore shows how working together and following your passion can shape the future of technology. It brings together a community of people who love exploring new ideas and making them happen.
+                
+                </p>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <img src="Xplore1.jpg" alt="Image 1" class="img-fluid zoomable-image">
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <img src="Xplore2.jpg" alt="Image 2" class="img-fluid zoomable-image">
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <img src="Xplore3.jpg" alt="Image 3" class="img-fluid zoomable-image">
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <img src="Xplore4.jpg" alt="Image 4" class="img-fluid zoomable-image">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<!-- Registration section -->
+<section id="Event">
+    <section class="container mt-2">
+        <h2 class="pb-5 destination">Events</h2>
+        <div class="row destination">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="3.jpg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">PROJECTion</h5>
+                        <p class="card-text">Innovative Project Competition.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSedJu83wGWx0qaCrVA8zTqW9jpKa6moNWOUjyusK1YS1ZjHGA/viewform?usp=sharing" target="_blank" class="btn btn-primary">Register</a>
+                        <a href="Projection_rules.html" target="_blank"  class="btn btn-primary">Rules</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="1.jpg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">inQUIZITion</h5>
+                        <p class="card-text">Technical Quiz Contest.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeufc9UZXY5q1plIkRF5Xb4P1neBIEK1kcNN4AwK3SHLbHsQA/viewform?usp=sharing" target="_blank" class="btn btn-primary">Register</a>
+                        <a href="inquizition_rules.html" target="_blank" class="btn btn-primary">Rules</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <img src="2.jpg" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">ILLUSTRATion</h5>
+                        <p class="card-text"> Innovative Drawing Competition.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfresv51t2d0YDzSi32geIWYjemEdVrvSMuvSgGvRkKGmLg_Q/viewform?usp=sharing" target="_blank" class="btn btn-primary">Register</a>
+                        <a href="illustration_rules.html" target="_blank" class="btn btn-primary">Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+<section id="teams">
+    <section class="faculties">
+        <div class="center">
+            <h1>Core Team</h1>
+            <h3>Faculty Team</h3>
+        </div>
+    
+        <!-- First Row: First 2 faculty members -->
+        <div class="row justify-content-center">
+            <div class="team-content">
+                <div class="box">
+                    <img src="AM.jpg">
+                    <h3> Prof. Amit Kumar Majumder,<br> HOD, ECE, FIT</h3>
+                    <h5>Convenor</h5>
+                </div>
+        
+                <div class="box">
+                    <img src="SM.jpeg">
+                    <h3>Dr. Samik Marick,<br> Associate Professor, ECE, FIT</h3>
+                    <h5>Joint Convenor</h5>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Second Row: Next 3 faculty members -->
+        <div class="row justify-content-center">
+            <div class="team-content">
+                <div class="box">
+                    <img src="AB-1.jpeg">
+                    <h3>Prof. Avishek Banerjee, Asistant Professor, ECE, FIT</h3>
+                    <h5>Faculty Head <br> PROJECTion</h5>
+                </div>
+        
+                <div class="box">
+                    <img src="RD.jpeg">
+                    <h3> Prof. Rupa Das, <br> Assistant Professor, ECE, FIT</h3>
+                    <h5>Faculty Head<br> inQUIZITion</h5>
+                </div>
+                
+                <div class="box">
+                    <img src="SUG.jpeg">
+                    <h3>Prof. Sucharita Ghosh, Assistant Professor, ECE, FIT</h3>
+                    <h5>Faculty Head <br> ILLUSTRATion</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<section class="student">
+    <div class="center">
+        <h3> Student Team</h3>
+    </div>
+
+    <!-- First team-content with 3 students -->
+    <div class="team-content">
+        <div class="box">
+            <img src="Somali.jpeg">
+            <h3>Somali Sikdar</h3>
+            <h5>Event Head</h5>
+        </div>
+
+        <div class="box">
+            <img src="Vaibhav.jpeg">
+            <h3>Vaibhav Sinha</h3>
+            <h5>Event Head</h5>
+        </div>
+
+        <div class="box">
+            <img src="Arunava.jpeg">
+            <h3>Arunava Pal</h3>
+            <h5>Event Head</h5>
+        </div>
+    </div>
+
+    <!-- Second team-content with 2 students -->
+    <div class="team-content">
+        <div class="box">
+            <img src="Gopi.jpeg">
+            <h3>Gopendranath Sasmal</h3>
+            <h5>PROJECTion Head</h5>
+        </div>
+
+        <div class="box">
+            <img src="Ankur.jpeg">
+            <h3>Ankur Mondal</h3>
+            <h5>PROJECTion Head</h5>
+        </div>
+    </div>
+
+    <!-- Third team-content with 2 students -->
+    <div class="team-content">
+        <div class="box">
+            <img src="Shaunak.jpeg">
+            <h3>Shauank Biswas</h3>
+            <h5>inQUIZITion Head</h5>
+        </div>
+
+        <div class="box">
+            <img src="Anubhav.jpeg">
+            <h3>Anubhav Mukherjee</h3>
+            <h5>inQUIZITion Head</h5>
+        </div>
+    </div>
+
+    <!-- Fourth team-content with 1 student -->
+    <div class="team-content">
+        <div class="box">
+            <img src="Subha.jpeg">
+            <h3>Subhajyoti Pal</h3>
+            <h5>Public Relations</h5>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+<!-- sponsor 
+<section id="sponsor">
+<section class="container mt-5 text-center">
+    <h2 class="mb-4">Our Sponsors</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+            <div class="card">
+                <img src="sponsor1.jpg" class="card-img-top" alt="Sponsor 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sponsor Name 1</h5>
+                    <p class="card-text">Description of the sponsor or their products/services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+            <div class="card">
+                <img src="sponsor2.jpg" class="card-img-top" alt="Sponsor 2">
+                <div class="card-body">
+                    <h5 class="card-title">Sponsor Name 2</h5>
+                    <p class="card-text">Description of the sponsor or their products/services.</p>
+                </div>
+            </div>
+        </div>
+        
+</section>
+</section>
+
+-->
+<section id="Contact">
+    <section class="container mt-2">
+        <h2 class="destination">Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-6 pb-5">
+                <form id="contactForm">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" autocomplete="off">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <div class="destination">
+                        <button type="submit" class="btn btn-primary mt-4">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 destination">
+                <h4>2nd Floor,</h4>
+                <p>Department of Electronics & Communication Engineering,<br>Future Institute of Technology, Kolkata</p>
+                <iframe src="https://maps.google.com/maps?q=Future+institute+of+technology,kolkata&output=embed" width="250" height="170" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h4 class="mt-3">Contact Information</h4>
+                <p>Email: xplore.fitece@gmail.com<br>Phone: +918809545754, +919433360146</p>
+                <!-- Follow Us section -->
+                <h4 class="text-center">Follow Us</h4>
+                <p class="text-center">Stay connected with us on social media:</p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-3 rounded-icon"><a href="https://www.facebook.com/xplorefit" target="_blank"><img src="fb_logo.png" alt="Facebook" style="width: 40px; height: 40px; object-fit: cover;"></a></li>
+                    <li class="rounded-icon"><a href="https://www.instagram.com/xplore.fit/" target="_blank"><img src="instagram_logo.png" alt="Instagram" style="width: 40px; height: 40px; object-fit: cover;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+<!-- footer -->
+<footer class="bg-black text-light ">
+    <div class="container text-center">
+        <p> All rights reserved  &copy; XPLORE'24.</p>
+    </div>
+</footer>
+    
+    <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="path/to/lightbox.js"></script>
+<!-- Lightbox JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="scroll.js"></script>
+</body>
+</html>

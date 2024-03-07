@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-family: Arial, sans-serif; /* Change font family for better readability */
+}
+
+body {
+    position: relative;
+    overflow: auto; /* Ensure video covers entire viewport */
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px; /* Increased padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Increased box shadow */
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.topic {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.rules {
+    margin-bottom: 40px;
+}
+
+.rules ul {
+    list-style-type: none;
+    padding-left: 0; /* Removed left padding */
+    font-size: 1.3rem;
+    counter-reset: rule-counter;
+}
+
+.rules ul li {
+    counter-increment: rule-counter;
+    margin-bottom: 10px; /* Increased margin between rules */
+}
+
+.rules ul li::before {
+    content: counter(rule-counter) ". ";
+    margin-right: 10px; /* Added space between number and rule text */
+}
+
+.contact {
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 40px; /* Decreased padding for smaller screens */
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .topic {
+        font-size: 1.5rem;
+    }
+
+    .rules ul {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .topic {
+        font-size: 1.2rem;
+    }
+
+    .section-heading {
+        font-size: 1.2rem;
+    }
+}
